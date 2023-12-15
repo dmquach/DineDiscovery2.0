@@ -82,49 +82,6 @@ function Map({ center, business }) {
   return (
     <>
 
-      <GoogleMap
-        zoom={15}
-        center={center}
-        mapContainerClassName="map-container"
-      >
-        {markers.map((business, i) => (
-          <Marker
-            position={business.position}
-            animation={window.google.maps.Animation.DROP}
-            key={i + 9999999}
-            onClick={() => handleMarkerClick(business)}
-            label={{
-              text: (i + 1).toString(),
-              fontSize: "12px",
-              fontWeight: "bold",
-            }}
-          />
-        ))}
-
-        {selectedBusiness && (
-          <Link to={`/business/${selectedBusiness.id}`}>
-            <InfoWindow
-              position={selectedBusiness.position}
-              onCloseClick={() => setSelectedBusiness(null)}
-            >
-              <div className="infoWindow">
-                <div
-                  className="infoWindow_img"
-                  style={{
-                    backgroundImage: `url(${selectedBusiness.photo})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                ></div>
-                <FixedStarRating rating={selectedBusiness.rating} />
-                <h2>{selectedBusiness.name}</h2>
-                <p>{selectedBusiness.category}</p>
-              </div>
-            </InfoWindow>
-          </Link>
-        )}
-      </GoogleMap>
     </>
   );
 }
-

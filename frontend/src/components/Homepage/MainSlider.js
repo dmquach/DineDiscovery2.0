@@ -11,7 +11,7 @@ const MainSlider=()=>{
 
   ];
 const headings=[
-  "Zelp Your Favorite Places!",
+  "Discover Your Favorite Places!",
   "Make a Review!",
   "Upload Pictures!"
 ]
@@ -39,14 +39,14 @@ const headings=[
           <div className="mainHeadingDiv">
             <h1 className="mainImgHeader">
               {" "}
-              Zelp
+              DineDiscovery
               <i
                 className="fa-brands fa-yelp"
                 style={{ fontSize: "90px", color: "red" }}
               ></i>
             </h1>
             <h1 className="mainImgHeader subHeader">
-              Zelp Your Favorite Places!
+              Discover Your Favorite Places!
             </h1>
           </div>
         </div>

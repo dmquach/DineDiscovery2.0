@@ -68,17 +68,13 @@ const LoginFormPage = () => {
 
       <form className="loginForm" onSubmit={handleSubmit}>
         <div className="loginIntro">
-          <h1>Log In to Zelp</h1>
+          <h1>Log In</h1>
           <div>
-            <h4>New to Zelp?</h4>
+            <h4>New?</h4>
             <Link className="signupLink" to="/signup">
               Sign Up
             </Link>
           </div>
-          <p>
-            By continuing, you agree to Zelp’s <a>Terms of Service</a> and
-            acknowledge Zelp’s <a>Privacy Policy</a>.
-          </p>
         </div>
 
         <div className="formInputs">
@@ -103,7 +99,7 @@ const LoginFormPage = () => {
           <DemoLogin className="demo" string="Demo Login" />
         </div>
         <div className="signupSmall">
-          <p>New to Zelp? </p>
+          <p>New? </p>
           <Link className="signupLink Small" to="/signup">
             Sign Up
           </Link>

@@ -4,7 +4,7 @@ const ReviewErrorModal =({setImageButtonClick})=>{
       <div>
         <div className="searchBar_heading">
           <div>
-            <h1>Zelp</h1>
+            <h1>DineDiscovery</h1>
             <i className="fa-brands fa-yelp" style={{ fontSize: "25px" }}></i>
           </div>
           <div

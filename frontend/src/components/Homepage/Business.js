@@ -27,20 +27,7 @@ const Business = ({user}) => {
     }
 
   return (
-    <div className="businessCardsWrapper">
-      <div className="businessCardHeader">
-        <h1>Your Next Review Awaits</h1>
-      </div>
-      <div
-        className="businessCardHolder"
-        // data-aos="fade-up"
-        // data-aos-offset="300"
-      >
-        {businesses?.map((business, i) => {
-          return <BusinessCard business={business} key={`businessCard-${i}`} />;
-        })}
-      </div>
-    </div>
+    <>  </>
   );
 };
 export default Business;

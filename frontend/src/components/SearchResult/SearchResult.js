@@ -36,9 +36,6 @@ const SearchResult = () => {
           />
         ))}
       </div>
-      <div className="googleMap">
-        <GMap business={businesses.business} />
-      </div>
     </div>
   ) : (
     <div className="noResult">
@@ -51,8 +48,10 @@ const SearchResult = () => {
           <h2>Suggestions for improving your results:</h2>
         </li>
         <li>
-          ● Try a different location Check the spelling or try alternate
-          spellings
+          ● Try a different location
+        </li>
+        <li>
+          ● Check the spelling
         </li>
         <li>
           ● Try a more general search, e.g. "pizza" instead of "pepperoni"

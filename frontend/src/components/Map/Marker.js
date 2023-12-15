@@ -27,21 +27,8 @@ function Map({ business, class_name }) {
   const [selected, setSelected] = useState(null);
 
   return (
-    <GoogleMap
-      zoom={15}
-      center={center}
-      mapContainerClassName={`${class_name}`}
-      options={{
-        keyboardShortcuts: false, // Disable keyboard shortcuts
-      }}
-    >
-      <Marker
-        position={{
-          lat: business?.lat,
-          lng: business?.lng,
-        }}
-        animation={1}
-      />
-    </GoogleMap>
+    <>
+      
+    </>
   );
 }

@@ -37,9 +37,9 @@ function Navigation() {
     <ul className="navbar">
       <NavLink className="homeNavLink" exact to="/">
         {location.pathname === "/" ? (
-          <h1 className="home">Zelp</h1>
+          <h1 className="home">DineDiscovery</h1>
         ) : (
-          <h1 className="notHome">Zelp</h1>
+          <h1 className="notHome">DineDiscovery</h1>
         )}
 
         <i className="fa-brands fa-yelp" style={{ color: "#ff1a1a" }}></i>

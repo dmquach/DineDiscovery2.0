@@ -77,9 +77,6 @@ const BusinessPage = () => {
               return <CommentSections key={review.id + 88} review={review} />;
             })}
         </div>
-        <div className="sideBar">
-          <ContactMe />
-        </div>
       </div>
     </div>
   );

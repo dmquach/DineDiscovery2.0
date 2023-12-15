@@ -69,9 +69,7 @@ const url = location.pathname;
             <Route exact path="/marker">
               <MapMarker />
             </Route>
-            <Route exact path="/seeYouSoon">
-              <AboutDev />
-            </Route>
+
             <Route exact path="/:notFound">
               <NotFound />
             </Route>
