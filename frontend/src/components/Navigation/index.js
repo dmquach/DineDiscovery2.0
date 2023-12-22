@@ -49,20 +49,17 @@ function Navigation() {
       <div className="iconLinks">
         <a
           id="fabLink1"
-          href="https://github.com/useNavigate/Zelp"
+          href="https://github.com/dmquach/DineDiscovery"
           target="_blank"
         >
           <i className="fa-brands fa-github"></i>
         </a>
         <a
           id="fabLink2"
-          href="https://www.linkedin.com/in/sara-ryu-798165261/"
+          href="https://www.linkedin.com"
           target="_blank"
         >
           <i className="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://wellfound.com/u/sara-ryu" target="_blank">
-          <i className="fa-brands fa-angellist"></i>
         </a>
         {sessionUser ? (
           <li>
