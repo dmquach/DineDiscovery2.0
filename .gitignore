@@ -29,3 +29,4 @@ env.development.local
 /frontend/.env
 /config/credentials.yml.enc
 config/initializers/aws.rb
+!/public
