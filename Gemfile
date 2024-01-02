@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+gem "faker"
 gem "bcrypt"
 gem "jbuilder"
 gem "activestorage"
@@ -23,7 +24,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem "rack-cors"
 
-gem "faker"
+
 group :development, :test do
   gem "byebug", platforms: %i[ mri mingw x64_mingw ]
 end
