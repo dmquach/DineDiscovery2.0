@@ -1,6 +1,6 @@
 import "./DeleteImageWarning.css"
 const ImageDeletedModal = ({ setDeletedAlert }) => {
-    debugger
+    // debugger
   return (
     <div className="deleteWarning">
       <div className="searchBar_heading">
