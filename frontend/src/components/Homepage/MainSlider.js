@@ -21,7 +21,7 @@ const MainSlider=()=>{
  useEffect(() => {
    const interval = setInterval(changeImage, 3000);
    return () => clearInterval(interval);
- }, [urlIndex]);
+ }, [urlIndex, useEffect]);
 
 
 

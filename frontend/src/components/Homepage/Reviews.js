@@ -16,7 +16,7 @@ const Reviews = () => {
 
   useEffect(() => {
     dispatch(fetchLatestReviews()).then(() => setIsLoading(false));
-  }, []);
+  }, [dispatch]);
 
   if (isLoading) {
     return <Loading/>;

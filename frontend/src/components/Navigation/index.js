@@ -7,7 +7,7 @@ import ProfileButton from "./ProfileButton";
 import "./navigation.css";
 import DemoLogin from "../DemoLogin/DemoLogin";
 import SearchBar from "../SearchBar/SearchBar";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import CategorySearch from "../CategorySearch/CategorySearch";
 import { useLocation } from "react-router-dom";
 

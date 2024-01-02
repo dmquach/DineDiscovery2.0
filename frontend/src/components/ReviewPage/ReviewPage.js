@@ -20,17 +20,20 @@ const ReviewPage = () => {
   //  const { myReview } = location.state;
 
   const dispatch = useDispatch();
-  const url = location.pathname;
+  // const url = location.pathname;
   const { review } = useParams();
 
   const arr = review.split("-");
   const [hover, setHover] = useState(0);
-  const [BID, setBID] = useState(arr[1]);
+  // const [BID, setBID] = useState(arr[1]);
+  const BID = useState(arr[1])
   const [rating, setRating] = useState(arr[0]);
   const [body, setBody] = useState("");
-  const [userId, setUserId] = useState(sessionUser?.id);
+  // const [userId, setUserId] = useState(sessionUser?.id);
+  const userId = useState(sessionUser?.id);
   const [redirect, setRedirect] = useState(false);
-  const [bName, setBname] = useState(arr[2]);
+  // const [bName, setBname] = useState(arr[2]);
+  const bName = useState(arr[2])
   const [imageFiles, setImageFiles] = useState([]);
   const [imageUrls, setImageUrls] = useState([]);
   const [showModal, setShowModal] = useState(false);
