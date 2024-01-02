@@ -7,10 +7,10 @@ import ImageModal from "./ImageModal";
 const BizImageHolder = ({ business, reviews }) => {
   const [showModal, setShowModal] = useState(false);
 
-  const imageNum = Object.values(reviews).reduce((acc, review) => {
-    acc += review.imageUrls.length;
-    return acc;
-  }, 0);
+  // const imageNum = Object.values(reviews).reduce((acc, review) => {
+  //   acc += review.imageUrls.length;
+  //   return acc;
+  // }, 0);
 
   function checkTime() {
     const now = new Date();
@@ -85,4 +85,3 @@ const BizImageHolder = ({ business, reviews }) => {
 };
 
 export default BizImageHolder;
-

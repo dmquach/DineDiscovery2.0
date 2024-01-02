@@ -9,18 +9,18 @@ import SearchResult from "./components/SearchResult/SearchResult";
 import ReviewPage from "./components/ReviewPage/ReviewPage";
 import BusinessPage from "./components/Business/BusinessPage";
 import Post from "./components/Post/post";
-import ReviewEditPage from "./components/ReviewEditPage/ReviewEditPage";
+// import ReviewEditPage from "./components/ReviewEditPage/ReviewEditPage";
 import Home from "./components/Map/Map";
 import MapMarker from "./components/Map/Marker";
 import { ModalProvider } from "./Context/Modal";
 
 import { useEffect } from "react";
-import AboutDev from "./components/Dev/AboutDev";
+// import AboutDev from "./components/Dev/AboutDev";
 import NotFound from "./components/Utils/NotFound";
 import Footer from "./components/Footer/Footer";
 function App() {
   const location = useLocation()
-const url = location.pathname;
+// const url = location.pathname;
 
 
   useEffect(() => {

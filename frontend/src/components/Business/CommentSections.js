@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useEffect } from "react";
 import "./business.css";
 import FixedStarRating from "../StarRating/FixedStarRating";
 const CommentSections = ({ review }) => {

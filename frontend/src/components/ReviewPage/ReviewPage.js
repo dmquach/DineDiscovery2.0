@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { Redirect } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { receiveReview } from "../../store/review";
@@ -15,7 +15,7 @@ import ImageDeletedModal from "./ImageDeletedModal";
 
 const ReviewPage = () => {
   const sessionUser = useSelector((state) => state.session.user);
-  const [newPicture, setNewPicture] = useState(null);
+  // const [newPicture, setNewPicture] = useState(null);
   const location = useLocation();
   //  const { myReview } = location.state;
 

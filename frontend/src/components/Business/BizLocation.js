@@ -1,5 +1,5 @@
-import { useLoadScript } from "@react-google-maps/api";
-import { useEffect, useState } from "react";
+// import { useLoadScript } from "@react-google-maps/api";
+// import { useEffect, useState } from "react";
 import "./business.css";
 import BizGMap from "../Map/Marker";
 const BizLocation = ({ business }) => {
@@ -92,24 +92,24 @@ export default BizLocation;
 
 
 
-const Geocode = ({ lat, lng }) => {
-  const [address, setAddress] = useState("");
+// const Geocode = ({ lat, lng }) => {
+//   const [address, setAddress] = useState("");
 
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_MAPS_API_KEY,
-    libraries: ["places"],
-  });
+//   const { isLoaded, loadError } = useLoadScript({
+//     googleMapsApiKey: process.env.REACT_APP_MAPS_API_KEY,
+//     libraries: ["places"],
+//   });
 
-  useEffect(() => {
-    if (isLoaded) {
-      const geocoder = new window.google.maps.Geocoder();
-      geocoder.geocode({ location: { lat, lng } }, (results, status) => {
-        if (status === "OK" && results[0]) {
-          setAddress(results[0].formatted_address);
-        }
-      });
-    }
-  }, [isLoaded, lat, lng]);
+//   useEffect(() => {
+//     if (isLoaded) {
+//       const geocoder = new window.google.maps.Geocoder();
+//       geocoder.geocode({ location: { lat, lng } }, (results, status) => {
+//         if (status === "OK" && results[0]) {
+//           setAddress(results[0].formatted_address);
+//         }
+//       });
+//     }
+//   }, [isLoaded, lat, lng]);
 
-  return <div>{address}</div>;
-};
+//   return <div>{address}</div>;
+// };

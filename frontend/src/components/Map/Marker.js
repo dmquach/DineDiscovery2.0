@@ -1,9 +1,9 @@
 import "./map.css";
 
-import { fetchUnreviewedBusiness } from "../../store/business";
-import { useDispatch, useSelector } from "react-redux";
-import { useState, useMemo, useEffect } from "react";
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+// import { fetchUnreviewedBusiness } from "../../store/business";
+// import { useDispatch, useSelector } from "react-redux";
+// import { useState, useMemo} from "react";
+import { useLoadScript, } from "@react-google-maps/api";
 
 const place = ["places"];
 export default function BizGMap({ business, class_name }) {
@@ -19,16 +19,16 @@ export default function BizGMap({ business, class_name }) {
   return <Map business={business} class_name={class_name} />;
 }
 
-function Map({ business, class_name }) {
-  const center = useMemo(
-    () => ({ lat: business.lat, lng: business.lng }),
-    [business]
-  );
-  const [selected, setSelected] = useState(null);
+// function Map({ business }) {
+//   // const center = useMemo(
+//   //   () => ({ lat: business.lat, lng: business.lng }),
+//   //   [business]
+//   // );
+//   // const [selected, setSelected] = useState(null);
 
-  return (
-    <>
-      
-    </>
-  );
-}
+//   return (
+//     <>
+
+//     </>
+//   );
+// }

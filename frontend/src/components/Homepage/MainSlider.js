@@ -1,5 +1,5 @@
 import "./mainSlider.css"
-import CategorySearch from "../CategorySearch/CategorySearch";
+// import CategorySearch from "../CategorySearch/CategorySearch";
 import Navigation from "../Navigation";
 import { useState,useEffect } from "react";
 const MainSlider=()=>{
@@ -10,11 +10,11 @@ const MainSlider=()=>{
     "https://media.istockphoto.com/id/851159308/photo/close-up-of-home-made-burgers.jpg?s=612x612&w=0&k=20&c=TqT6yxMqvv4C-kqq-256tDPHdvgJDQejtxOCsc4_O4A=",
 
   ];
-const headings=[
-  "Discover Your Favorite Places!",
-  "Make a Review!",
-  "Upload Pictures!"
-]
+// const headings=[
+//   "Discover Your Favorite Places!",
+//   "Make a Review!",
+//   "Upload Pictures!"
+// ]
   const changeImage = () => {
     setUrlIndex((urlIndex + 1) % imageUrls.length);
   };
