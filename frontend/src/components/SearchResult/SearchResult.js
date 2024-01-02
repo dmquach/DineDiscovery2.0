@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchSearchTerm } from "../../store/business";
 import SearchCard from "../SearchCard/SearchCard";
 import "./searchPage.css";
-import GMap from "../Map/Map";
+// import GMap from "../Map/Map";
 import Loading from "../Utils/Loading";
 
 const SearchResult = () => {
@@ -15,7 +15,7 @@ const SearchResult = () => {
     dispatch(fetchSearchTerm(searchTerm)).then(()=>{
       setIsLoading(false);
     });
-  }, [searchTerm]);
+  }, [searchTerm, dispatch]);
 
   const businesses = useSelector((state) => state.business);
   if (isLoading) {

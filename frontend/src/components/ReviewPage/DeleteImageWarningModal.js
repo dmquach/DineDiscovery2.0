@@ -1,11 +1,11 @@
-import { Modal } from "../../Context/Modal";
+// import { Modal } from "../../Context/Modal";
 import "./DeleteImageWarning.css";
 const DeleteImageWarningModal = ({
   handleDelete,
   setDeleteImage,
   currentIndex,
-  deletedAlert,
-  setDeleteAlert,
+  // deletedAlert,
+  // setDeleteAlert,
 }) => {
   return (
     <>
@@ -24,10 +24,10 @@ const DeleteImageWarningModal = ({
         </div>
         <div className="uploadImageWrapper">
           <div className="areYouSure">
-            <img
-              src="https://cdni.iconscout.com/illustration/premium/thumb/delete-files-6771626-5639807.png?f=webp"
+            {/* <img
+              // src="https://cdni.iconscout.com/illustration/premium/thumb/delete-files-6771626-5639807.png?f=webp"
               width="300px"
-            />
+            /> */}
             <div className="Warning">
               <i className="fa-solid fa-triangle-exclamation"></i>
               <h1>Warning</h1>

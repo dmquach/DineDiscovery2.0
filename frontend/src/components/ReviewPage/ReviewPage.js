@@ -24,7 +24,7 @@ const ReviewPage = () => {
   const { review } = useParams();
 
   const arr = review.split("-");
-  const [hover, setHover] = useState(0);
+  // const [hover, setHover] = useState(0);
   // const [BID, setBID] = useState(arr[1]);
   const BID = useState(arr[1])
   const [rating, setRating] = useState(arr[0]);
@@ -42,7 +42,7 @@ const ReviewPage = () => {
   const [prevImageUrls, setPrevImageUrls] = useState([]);
   const [wasImage, setWasImage] = useState(false);
   const [myReview, setMyReview] = useState("");
-  const [alertVisible, setAlertVisible] = useState(false);
+  // const [alertVisible, setAlertVisible] = useState(false);
   const[deleteImage,setDeleteImage] = useState(false)
 const [currentIndex,setCurrentIndex] = useState("")
 const [deletedAlert,setDeletedAlert] = useState(false)
@@ -142,7 +142,7 @@ const [deletedAlert,setDeletedAlert] = useState(false)
 
   const handlePostWarning = () => {
     setShowAlert(true);
-    setAlertVisible(true);
+    // setAlertVisible(true);
   };
 
   const handleImageDeleteWarning=(e,i)=>{
@@ -207,7 +207,7 @@ const [deletedAlert,setDeletedAlert] = useState(false)
                 key={i + 88}
                 className={i <= rating ? "on" : "off"}
                 onMouseEnter={() => setRating(i)}
-                onMouseLeave={() => setHover(rating)}
+                // onMouseLeave={() => setHover(rating)}
               >
                 <i className="fa-solid fa-star"></i>
               </span>

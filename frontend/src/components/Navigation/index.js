@@ -14,24 +14,24 @@ import { useLocation } from "react-router-dom";
 function Navigation() {
   const sessionUser = useSelector((state) => state.session.user);
   const location = useLocation();
-  let sessionLinks;
-  if (sessionUser) {
-    sessionLinks = <ProfileButton user={sessionUser} />;
-  } else {
-    sessionLinks = (
-      <>
-        <NavLink className="login" to="/login">
-          Log In
-        </NavLink>
-        <NavLink className="signUp" to="/signup">
-          Sign Up
-        </NavLink>
-        <NavLink to="/">
-          <DemoLogin className={"demoLogin"} string="Demo Login"/>
-        </NavLink>
-      </>
-    );
-  }
+  // let sessionLinks;
+  // if (sessionUser) {
+  //   sessionLinks = <ProfileButton user={sessionUser} />;
+  // } else {
+  //   sessionLinks = (
+  //     <>
+  //       <NavLink className="login" to="/login">
+  //         Log In
+  //       </NavLink>
+  //       <NavLink className="signUp" to="/signup">
+  //         Sign Up
+  //       </NavLink>
+  //       <NavLink to="/">
+  //         <DemoLogin className={"demoLogin"} string="Demo Login"/>
+  //       </NavLink>
+  //     </>
+  //   );
+  // }
 
   return (
     <ul className="navbar">
@@ -50,14 +50,14 @@ function Navigation() {
         <a
           id="fabLink1"
           href="https://github.com/dmquach/DineDiscovery"
-          target="_blank"
+          // target="_blank"
         >
           <i className="fa-brands fa-github"></i>
         </a>
         <a
           id="fabLink2"
           href="https://www.linkedin.com"
-          target="_blank"
+          // target="_blank"
         >
           <i className="fa-brands fa-linkedin"></i>
         </a>

@@ -15,15 +15,17 @@ const MainSlider=()=>{
 //   "Make a Review!",
 //   "Upload Pictures!"
 // ]
+
+
+ useEffect(() => {
   const changeImage = () => {
     setUrlIndex((urlIndex + 1) % imageUrls.length);
   };
- useEffect(() => {
-   const interval = setInterval(changeImage, 3000);
+  const interval = setInterval(() => {
+    changeImage();
+  }, 3000);
    return () => clearInterval(interval);
- }, [urlIndex, useEffect]);
-
-
+ }, [urlIndex, imageUrls.length]);
 
     return (
       <div

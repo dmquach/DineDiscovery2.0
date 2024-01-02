@@ -43,10 +43,10 @@ const UploadImage = ({
         </div>
 
         <div className="imageInfoDiv">
-          {imageUrls.length == 0 && (
-            <img src="https://s3-media0.fl.yelpcdn.com/assets/public/photo_review_325x200_v2.yji-9de7a3277cea44fd0377.svg" />
+          {imageUrls.length === 0 && (
+            <img src="https://s3-media0.fl.yelpcdn.com/assets/public/photo_review_325x200_v2.yji-9de7a3277cea44fd0377.svg" alt=""/>
           )}
-          {imageUrls.length == 0 ? (
+          {imageUrls.length === 0 ? (
             <div className="imageHowto">
               <h1>Attach Photos</h1>
               <p>
@@ -66,7 +66,7 @@ const UploadImage = ({
               className="modal_button"
               onClick={() => myButton.current.click()}
             >
-              {imageUrls.length == 0 ? "Attach Images" : "Change Images"}
+              {imageUrls.length === 0 ? "Attach Images" : "Change Images"}
             </div>
             {imageUrls.length !== 0 && (
               <div

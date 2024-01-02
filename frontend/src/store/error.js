@@ -17,7 +17,7 @@ export const sendError =(errors)=>async(dispatch)=>{
         body:JSON.stringify(errors)
 
     })
-    const error = await res.json()
+    // const error = await res.json()
 }
 
 const errorReducer = (state = {}, action) => {

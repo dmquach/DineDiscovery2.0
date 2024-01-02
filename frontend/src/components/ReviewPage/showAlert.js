@@ -15,11 +15,11 @@ const Alert=({setShowAlert,})=>{
         </div>
         <div className="uploadImageWrapper">
           <div className="uploadImageModalDiv">
-            <img
+            {/* <img
               src="https://img.freepik.com/free-vector/online-review-concept-illustration_114360-1398.jpg"
               width="300px"
               style={{marginLeft:"30px"}}
-            />
+            /> */}
             <div className="imageHowto">
               <p>
                 <span>Please</span> provide both a <span>star rating</span> and

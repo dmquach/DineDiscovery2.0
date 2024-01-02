@@ -6,7 +6,7 @@ import "./signup.css";
 import SignupHeader from "./SignupHeader";
 import { useRef } from "react";
 import { Modal } from "../../Context/Modal";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 const SignupFormPage = () => {
   const myButton = useRef();
   const dispatch = useDispatch();

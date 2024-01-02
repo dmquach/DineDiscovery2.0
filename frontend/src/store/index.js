@@ -1,9 +1,9 @@
 import { createStore } from "redux"
 import { applyMiddleware, combineReducers,compose } from "redux";
-import logger from "redux-logger";
+// import logger from "redux-logger";
 import thunk from "redux-thunk";
 import sessionReducer from "./session";
-import errorReducer from "./error";
+// import errorReducer from "./error";
 import { businessReducer } from "./business";
 import reviewReducer from "./review";
 import userReducer from "./user";
