@@ -20,8 +20,8 @@ Rails.application.routes.draw do
   end
 
   get "*path",
-    to: "static_pages#frontend",
-    # constraints: lambda { |req| !req.xhr? && req.format.html }
+    to: "static_pages#frontend"
+    constraints: lambda { |req| !req.xhr? && req.format.html }
   root 'static_pages#frontend',
-    # constraints: lambda { |req| !req.xhr? && req.format.html }
+    constraints: lambda { |req| !req.xhr? && req.format.html }
 end
