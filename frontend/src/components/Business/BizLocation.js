@@ -1,7 +1,7 @@
 // import { useLoadScript } from "@react-google-maps/api";
 // import { useEffect, useState } from "react";
 import "./business.css";
-import BizGMap from "../Map/Marker";
+// import BizGMap from "../Map/Marker";
 const BizLocation = ({ business }) => {
 
 
@@ -20,7 +20,7 @@ const BizLocation = ({ business }) => {
       </div>
       <div className="locationWrapper">
         <div className="bizLocation">
-          <BizGMap business={business} class_name={"locationMap"} />
+          {/* <BizGMap business={business} class_name={"locationMap"} /> */}
           <div className="locationAddress">
             <h2>{business.city}{" "}{business.state},{business.zipCode}</h2>
             <h3>{business.name}</h3>
