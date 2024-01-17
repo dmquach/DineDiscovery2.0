@@ -1,10 +1,10 @@
-# WELCOME TO ZELP
+# WELCOME TO DineDiscover
 
-Check out the [Live Site](https://zelp-jz8y.onrender.com/)!.
+Check out the [Live Site](https://DineDiscover-jz8y.onrender.com/)!.
 
 ## introduction
 
-Zelp is a web application that allows users to browse restaurants, leave reviews, and view ratings. The idea behind Zelp was to create a platform that makes it easy for people to find and discover new restaurants. As a foodie and avid restaurant-goer, I was interested in building a website that helps people find the perfect place to eat.
+DineDiscover is a web application that allows users to browse restaurants, leave reviews, and view ratings. The idea behind DineDiscover was to create a platform that makes it easy for people to find and discover new restaurants. As a foodie and avid restaurant-goer, I was interested in building a website that helps people find the perfect place to eat.
 The technologies used in this project include:
 
 - Languages: JavaScript, HTML, Ruby, and CSS
@@ -18,7 +18,7 @@ The technologies used in this project include:
 
 # Reviews
 
-Zelp users can easily share their dining experiences by writing reviews with ratings and multiple pictures. The latest reviews will appear on the front page, and if a user has already written a review for a restaurant, it will show up at the top of the review section for convenience.
+DineDiscover users can easily share their dining experiences by writing reviews with ratings and multiple pictures. The latest reviews will appear on the front page, and if a user has already written a review for a restaurant, it will show up at the top of the review section for convenience.
 
 ```js
 //handling image files
@@ -42,12 +42,12 @@ const handleFiles = ({ currentTarget }) => {
 };
 ```
 
-a Zelp user can easily update their reviews and ratings by clicking updating button to update their review
+a DineDiscover user can easily update their reviews and ratings by clicking updating button to update their review
 
 > Updating a review
 > ![update review](/app/assets/images/update.gif)
 
-a Zelp user easily can see their review it will be always on the top of review section
+a DineDiscover user easily can see their review it will be always on the top of review section
 
 > Writing a review (with images)
 > ![updateReview a review_1](/app/assets/images/starReview_2.gif)
@@ -60,7 +60,7 @@ a Zelp user easily can see their review it will be always on the top of review s
 
 # Rating
 
-Zelp user leaves a rating for a restaurant, Zelp automatically updates the restaurant's overall rating to reflect the new feedback. This ensures that users have access to the most accurate and up-to-date restaurant ratings possible.
+DineDiscover user leaves a rating for a restaurant, DineDiscover automatically updates the restaurant's overall rating to reflect the new feedback. This ensures that users have access to the most accurate and up-to-date restaurant ratings possible.
 
 ```javascript
 //Star rating component
@@ -109,7 +109,7 @@ Zelp user leaves a rating for a restaurant, Zelp automatically updates the resta
 
 # Search
 
-If you're a Zelp user, you can use the search, google map will render places with markers to find great restaurants. user can filter your search by category, making it easy to find.
+If you're a DineDiscover user, you can use the search, google map will render places with markers to find great restaurants. user can filter your search by category, making it easy to find.
 
 > Search Bar feature
 > ![search bar feature](/app/assets/images/searchType.gif)
@@ -156,7 +156,7 @@ const SearchBar = () => {
 
 # Review Awaits
 
-Zelp has a special feature called "Your Next Review Awaits" that helps users discover new dining experiences. When users log in to their accounts, they'll see a list of recommended restaurants that they haven't reviewed yet. This makes it easy to try new places and share their experiences with others.
+DineDiscover has a special feature called "Your Next Review Awaits" that helps users discover new dining experiences. When users log in to their accounts, they'll see a list of recommended restaurants that they haven't reviewed yet. This makes it easy to try new places and share their experiences with others.
 
 ```ruby
   def unreviewed
@@ -170,5 +170,5 @@ Zelp has a special feature called "Your Next Review Awaits" that helps users dis
 
 # Thanks
 
-Zelp was created within a 14day time frame thank you for your time and consideration!
+DineDiscover was created within a 14day time frame thank you for your time and consideration!
 # DineDiscovery2.0
