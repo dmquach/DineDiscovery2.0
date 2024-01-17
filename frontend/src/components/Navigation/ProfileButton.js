@@ -55,22 +55,6 @@ function ProfileButton({ user }) {
       </div>
       {showMenu && (
         <ul className="profile-dropdown">
-          <li>{user.firstName}</li>
-
-          <li>
-            <i className="fa-regular fa-circle-user"></i>About Me
-          </li>
-          <li>
-            <i className="fa-regular fa-bookmark" />
-            My Collections
-          </li>
-          <li>
-            <i className="fa-solid fa-user-plus"></i>Find Friends
-          </li>
-          <li>
-            <i className="fa-solid fa-gear"></i>Account Settings
-          </li>
-
           <li className="logoutButton" onClick={logout}>
             <i className="fa-solid fa-right-from-bracket"></i>Log Out
           </li>
