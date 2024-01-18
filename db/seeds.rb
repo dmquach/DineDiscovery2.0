@@ -7,6 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require "aws-sdk-s3"
 require "open-uri"
+
 # ApplicationRecord.transaction do
 puts "Destroying tables..."
 # Unnecessary if using `rails db:seed:replant`
@@ -125,8 +126,12 @@ pizzaHut = Business.create!(
   lat: 0,
   lng: 0,
 )
-
+local_image_path = Rails.root.join('db', 'images', 'pizzahut.png')
+pizzaHut.photo.attach(io: File.open(local_image_path, 'rb'), filename: 'pizzahut.png')
 # championPizza.photo.attach(io: File.open('../db/images/pizza.jpg'), filename: 'pizza.jpg')
+puts "here"
+# bravoPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizz3.jpg"), filename: "pizza-3.jpg")
+#pizza5
 
 #pizza3
 unionSquarePizza = Business.create!(

@@ -30,7 +30,7 @@ const CategorySearch =()=>{
       <>
         <div className="category-holder">
           <div className="res-category" onClick={openMenu}>
-            <h1>Restaurants</h1>
+            <h1>Fast Search</h1>
           </div>
           {showMenu && (
             <div className="categorySearch">
