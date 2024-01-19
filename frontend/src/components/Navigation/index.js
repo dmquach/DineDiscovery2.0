@@ -42,7 +42,7 @@ function Navigation() {
           <h1 className="notHome">DineDiscovery</h1>
         )}
 
-        <i className="fa-brands fa-yelp" style={{ color: "#ff1a1a" }}></i>
+        <i className="fa-brands fa-yelp" style={{ color: "black" }}></i>
       </NavLink>
       <SearchBar />
       <CategorySearch />

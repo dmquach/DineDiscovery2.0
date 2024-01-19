@@ -44,7 +44,7 @@ const MainSlider=()=>{
               DineDiscovery
               <i
                 className="fa-brands fa-yelp"
-                style={{ fontSize: "90px", color: "red" }}
+                style={{ fontSize: "90px", color: "black" }}
               ></i>
             </h1>
             <h1 className="mainImgHeader subHeader">

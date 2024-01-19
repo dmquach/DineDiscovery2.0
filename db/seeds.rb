@@ -110,7 +110,7 @@ pizzaPizza = Business.create!(
   lng: 0,
 )
 #pizza2
-# championPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizza.jpg"), filename: "pizza1.jpg")
+# championPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizza.jpg"), filename: "pizza1.jWipg")
 
 puts "business..."
 
@@ -125,9 +125,10 @@ pizzaHut = Business.create!(
   category: "Pizza",
   lat: 0,
   lng: 0,
+  # photo: "foods/download-1.png",
 )
-local_image_path = Rails.root.join('db', 'images', 'pizzahut.png')
-pizzaHut.photo.attach(io: File.open(local_image_path, 'rb'), filename: 'pizzahut.png')
+# local_image_path = Rails.root.join('db', 'images', 'pizzahut.png')
+# pizzaHut.photo.attach(io: File.open(local_image_path, 'rb'), filename: 'pizzahut.png')
 # championPizza.photo.attach(io: File.open('../db/images/pizza.jpg'), filename: 'pizza.jpg')
 puts "here"
 # bravoPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizz3.jpg"), filename: "pizza-3.jpg")
@@ -148,9 +149,9 @@ unionSquarePizza = Business.create!(
 )
 
 #pizza4
-bravoPizza = Business.create!(
+helpMe = Business.create!(
   user_id: 4,
-  name: "Bravo Pizza",
+  name: "Hello Pizza",
   city: "SF",
   state: "CA",
   zip_code: "95121",
@@ -164,7 +165,7 @@ bravoPizza = Business.create!(
 # bravoPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizz3.jpg"), filename: "pizza-3.jpg")
 #pizza5
 
-littleItalyPizza = Business.create!(
+freshPizza = Business.create!(
   user_id: 5,
   name: "Fresh Pizza",
   city: "SF",
@@ -179,9 +180,9 @@ littleItalyPizza = Business.create!(
 # littleItalyPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizz4.jpg"), filename: "pizza-4.jpg")
 #pizza6
 
-unregularPizza = Business.create!(
+modPizza = Business.create!(
   user_id: 6,
-  name: "Unregular pizza",
+  name: "Mod pizza",
   city: "SF",
   state: "CA",
   zip_code: "95121",
@@ -193,9 +194,9 @@ unregularPizza = Business.create!(
 )
 # unregularPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizz5.jpg"), filename: "pizza-5.jpg")
 #pizza 7
-ribalta = Business.create!(
+my = Business.create!(
   user_id: 1,
-  name: "Ribalta",
+  name: "SF Street",
   city: "SF",
   state: "CA",
   zip_code: "95121",
@@ -208,9 +209,9 @@ ribalta = Business.create!(
 # ribalta.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizza6.jpg"), filename: "pizza-6.jpg")
 #pizza 8
 
-kidBrotherPizza = Business.create!(
+italianPizza = Business.create!(
   user_id: 2,
-  name: "Kid Brother Pizza",
+  name: "Italian Pizza",
   city: "SF",
   state: "CA",
   zip_code: "95121",
@@ -223,9 +224,9 @@ kidBrotherPizza = Business.create!(
 
 # kidBrotherPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizza7.jpg"), filename: "pizza-7.jpg")
 
-joesPizza = Business.create!(
+dylanPizza = Business.create!(
   user_id: 3,
-  name: "Joes Pizza",
+  name: "Dylan's Pizza",
   city: "SF",
   state: "CA",
   zip_code: "95121",
@@ -237,9 +238,9 @@ joesPizza = Business.create!(
 )
 # joesPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizza.jpg"), filename: "pizza-8.jpg")
 
-simoPizza = Business.create!(
+myPizza = Business.create!(
   user_id: 4,
-  name: "Simo Pizza",
+  name: "My Pizza",
   city: "SF",
   state: "CA",
   zip_code: "95121",
@@ -252,9 +253,9 @@ simoPizza = Business.create!(
 )
 # simoPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizza7.jpg"), filename: "simoPizza.jpg")
 
-willCoffee = Business.create!(
+yumCoffee = Business.create!(
   user_id: 5,
-  name: "Will's FabuLatte☕",
+  name: "Yum Latte",
   city: "SF",
   state: "CA",
   zip_code: "95121",
@@ -268,7 +269,7 @@ willCoffee = Business.create!(
 
 thinkCoffee = Business.create!(
   user_id: 6,
-  name: "Think Coffee",
+  name: "Thinking about Coffee",
   city: "SF",
   state: "CA",
   zip_code: "95121",
@@ -282,13 +283,13 @@ thinkCoffee = Business.create!(
 
 starbucks = Business.create!(
   user_id: 7,
-  name: "Starbucks",
+  name: "Star Buck Me",
   city: "SF",
   state: "CA",
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 20,
-  category: "Coffee",
+  category: "Drink",
   lat: 0,
   lng: 0,
 )
@@ -296,7 +297,7 @@ starbucks = Business.create!(
 
 blankStreetCoffee = Business.create!(
   user_id: 8,
-  name: "Blank Street Coffee",
+  name: "Street Coffee",
   city: "SF",
   state: "CA",
   zip_code: "95121",
@@ -308,53 +309,53 @@ blankStreetCoffee = Business.create!(
 )
 # blankStreetCoffee.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee6.jpg"), filename: "coffee1.jpg")
 
-baratie = Business.create!(
+coffee = Business.create!(
   user_id: 9,
-  name: "Baratie",
+  name: "Coffee House",
   city: "SF",
   state: "CA",
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 100,
-  category: "Steak",
+  category: "Coffee",
   lat: 0,
   lng: 0,
 )
 # baratie.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/barati_.jpg"), filename: "barati.jpg")
 
-ramenIchiraku = Business.create!(
+boba = Business.create!(
   user_id: 1,
-  name: "Ramen Ichiraku",
+  name: "Boba Lovers",
   city: "SF",
   state: "CA",
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 20,
-  category: "Ramen",
+  category: "Drinks",
   lat: 0,
   lng: 0,
 )
 
 # ramenIchiraku.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/naruto.jpg"), filename: "ramen.jpeg")
 
-gorinRamen = Business.create!(
+starbucks = Business.create!(
   user_id: 2,
-  name: "Gorin Ramen",
+  name: "Starbucks",
   city: "SF",
   state: "CA",
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 20,
-  category: "Ramen",
+  category: "Drinks",
   lat: 0,
   lng: 0,
 )
 
 # gorinRamen.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen2.jpg"), filename: "ramen.jpeg")
 
-ramen = Business.create!(
+raiser = Business.create!(
   user_id: 3,
-  name: "ramen",
+  name: "raiser",
   city: "SF",
   state: "CA",
   zip_code: "95121",
@@ -374,27 +375,27 @@ coffeeee = Business.create!(
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 20,
-  category: "Ramen",
+  category: "Drinks",
   lat: 0,
   lng: 0,
 )
 # minca.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen7.jpg"), filename: "ramen2.jpeg")
 
-ramenRamen = Business.create!(
+burgerBurger = Business.create!(
   user_id: 5,
-  name: "ramen ramen",
+  name: "Burger Burger",
   city: "SF",
   state: "CA",
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 20,
-  category: "Ramen",
+  category: "Burger",
   lat: 0,
   lng: 0,
 )
 # marufucuRamen.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen3.jpg"), filename: "ramen2.jpeg")
 
-iceCream = Business.create!(
+iceCold = Business.create!(
   user_id: 6,
   name: "Ice Cream",
   city: "SF",
@@ -402,117 +403,119 @@ iceCream = Business.create!(
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 20,
-  category: "Ramen",
+  category: "drinks",
   lat: 0,
   lng: 0,
 )
 # ramenMisoya.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen7.jpg"), filename: "ramen2.jpeg")
 
-ippudo = Business.create!(
+bunsHouse = Business.create!(
   user_id: 7,
-  name: "YUMM",
+  name: "BunsHouse",
   city: "SF",
   state: "CA",
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 20,
-  category: "Ramen",
+  category: "Burger",
   lat: 0,
   lng: 0,
 )
 # ippudo.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen3.jpg"), filename: "ramen2.jpeg")
 
-Ramen = Business.create!(
+burgerKing = Business.create!(
   user_id: 8,
-  name: "Ramen",
+  name: "BurgerKings",
   city: "SF",
   state: "CA",
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 20,
-  category: "Ramen",
+  category: "Burger",
   lat: 0,
   lng: 0,
 )
-puts "reviews"
+# puts "reviews"
 
-# oramen.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen2.jpg"), filename: "ramen2.jpeg")
-wills_1 = Review.create!(
-  rating: 5,
-  business_id: 11,
-  user_id: 1,
-  body: "Pretty good.",
-  images: [
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee9.jpg"), filename: "image1.jpg" },
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee2.jpg"), filename: "image2.jpg" },
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee3.jpg"), filename: "image3.jpg" },
-  ],
-)
-puts "here"
+# # oramen.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen2.jpg"), filename: "ramen2.jpeg")
+# wills_1 = Review.create!(
+#   rating: 5,
+#   business_id: 11,
+#   user_id: 1,
+#   body: "Pretty good.",
+#   images: [
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee9.jpg"), filename: "image1.jpg" },
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee2.jpg"), filename: "image2.jpg" },
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee3.jpg"), filename: "image3.jpg" },
+#   ],
+# )
+# puts "here"
 
-Business.find(wills_1.business_id).update_average_rating
+# Business.find(wlls_1.business_id).update_average_rating
 
-wills_2 = Review.create!(
-  rating: 5,
-  business_id: 10,
-  user_id: 2,
-  body: "Bro what is this trash.",
-  images: [
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee3.jpg"), filename: "image4.jpg" },
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee4.jpg"), filename: "image5.jpg" },
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee5.jpg"), filename: "image6.jpg" },
-  ],
-)
-Business.find(wills_2.business_id).update_average_rating
+# puts "here"
 
-wills_3 = Review.create!(
-  rating: 5,
-  business_id: 11,
-  user_id: 3,
-  body: "I love it!.",
-  images: [
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee1.jpg"), filename: "image4.jpg" },
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee11.jpg"), filename: "image5.jpg" },
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee10.jpg"), filename: "image6.jpg" },
-  ],
-)
-Business.find(wills_3.business_id).update_average_rating
+# wills_2 = Review.create!(
+#   rating: 5,
+#   business_id: 10,
+#   user_id: 2,
+#   body: "Bro what is this trash.",
+#   images: [
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee3.jpg"), filename: "image4.jpg" },
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee4.jpg"), filename: "image5.jpg" },
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee5.jpg"), filename: "image6.jpg" },
+#   ],
+# )
+# Business.find(wills_2.business_id).update_average_rating
 
-wills_4 = Review.create!(
-  rating: 5,
-  business_id: 11,
-  user_id: 6,
-  body: "Meh...",
-  images: [
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee7.jpg"), filename: "image4.jpg" },
+# wills_3 = Review.create!(
+#   rating: 5,
+#   business_id: 11,
+#   user_id: 3,
+#   body: "I love it!.",
+#   images: [
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee1.jpg"), filename: "image4.jpg" },
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee11.jpg"), filename: "image5.jpg" },
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee10.jpg"), filename: "image6.jpg" },
+#   ],
+# )
+# Business.find(wills_3.business_id).update_average_rating
 
-  ],
-)
-Business.find(wills_4.business_id).update_average_rating
+# wills_4 = Review.create!(
+#   rating: 5,
+#   business_id: 11,
+#   user_id: 6,
+#   body: "Meh...",
+#   images: [
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee7.jpg"), filename: "image4.jpg" },
 
-wills_5 = Review.create!(
-  rating: 1,
-  business_id: 11,
-  user_id: 7,
-  body: "So good!",
-  images: [
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee5.jpg"), filename: "image6.jpg" },
-  ],
-)
-Business.find(wills_5.business_id).update_average_rating
+#   ],
+# )
+# Business.find(wills_4.business_id).update_average_rating
 
-wills_6 = Review.create!(
-  rating: 5,
-  business_id: 1,
-  user_id: 1,
-  body: "Mhhh.",
-  images: [
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee8.jpg"), filename: "image6.jpg" },
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee11.jpg"), filename: "image5.jpg" },
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee10.jpg"), filename: "image9.jpg" },
-  ],
-)
-Business.find(wills_6.business_id).update_average_rating
+# wills_5 = Review.create!(
+#   rating: 1,
+#   business_id: 11,
+#   user_id: 7,
+#   body: "So good!",
+#   images: [
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee5.jpg"), filename: "image6.jpg" },
+#   ],
+# )
+# Business.find(wills_5.business_id).update_average_rating
+
+# wills_6 = Review.create!(
+#   rating: 5,
+#   business_id: 1,
+#   user_id: 1,
+#   body: "Mhhh.",
+#   images: [
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee8.jpg"), filename: "image6.jpg" },
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee11.jpg"), filename: "image5.jpg" },
+#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee10.jpg"), filename: "image9.jpg" },
+#   ],
+# )
+# Business.find(wills_6.business_id).update_average_rating
 
 # # # end
 

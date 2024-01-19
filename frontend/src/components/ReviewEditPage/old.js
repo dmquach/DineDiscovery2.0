@@ -127,7 +127,7 @@ const ReviewEditPage = () => {
           minLength="20"
           value={body}
           placeholder={
-            "Doesn’t look like much when you walk past, but I was practically dying of hunger so I popped in. The definition of a hole-in-the-wall. I got the regular hamburger and wow…  there are no words. A classic burger done right. Crisp bun, juicy patty, stuffed with all the essentials (ketchup, shredded lettuce, tomato, and pickles). There’s about a million options available between the menu board and wall full of specials, so it can get a little overwhelming, but you really can’t go wrong. Not much else to say besides go see for yourself! You won’t be disappointed."
+            "Just had an incredible experience! The Garlic Knots were a tasty start, and the pizza was pure perfection – crispy crust, top-notch toppings, and a flavor explosion. Dessert pizza with Nutella and Strawberries was a delightful surprise. Friendly staff and a cozy vibe. This is now my top pick for a pizza fix! 🤤🍕 #PizzaLover #FiveStars"
           }
           onChange={(e) => setBody(e.target.value)}
         />
