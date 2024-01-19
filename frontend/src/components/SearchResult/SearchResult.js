@@ -48,13 +48,10 @@ const SearchResult = () => {
           <h2>Suggestions for improving your results:</h2>
         </li>
         <li>
-          ● Try a different location
-        </li>
-        <li>
           ● Check the spelling
         </li>
         <li>
-          ● Try a more general search, e.g. "pizza" instead of "pepperoni"
+          ● Try a more general search, "pizza" instead of "food"
         </li>
       </ul>
     </div>

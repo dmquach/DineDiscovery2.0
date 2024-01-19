@@ -26,8 +26,8 @@ puts "Creating users..."
 demo = User.create!(
   email: "demo@demo.com",
   password: "123456",
-  first_name: "John",
-  last_name: "Doh",
+  first_name: "Demo",
+  last_name: "User",
   zip_code: "12345",
   birthday: "1995-05-15",
 )

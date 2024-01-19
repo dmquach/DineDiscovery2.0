@@ -276,52 +276,6 @@ const [deletedAlert,setDeletedAlert] = useState(false)
           </div>
         </>
       )}
-
-      <div className="imageUploadDiv">
-        <h3>New Photos</h3>
-      </div>
-      <div className="reviewFormWrapper reviewPicPreview">
-        {!showModal && imageUrls.length !== 0 ? (
-          <>
-            {imageUrls.length &&
-              imageUrls.map((url, i) => (
-                <div
-                  className="image__"
-                  key={url + i}
-                  style={{
-                    backgroundImage: `url(${url})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                >
-                  <div onClick={() => handleImageDelete(i)}>
-                    <i className="fa-solid fa-xmark"></i>
-                  </div>
-                </div>
-              ))}
-          </>
-        ) : (
-          <div className="imageUplodeDiv" onClick={handleModalImage}>
-            <i className="fa-solid fa-camera-retro"></i>
-            <h1>Click Here to upload images!</h1>
-          </div>
-        )}
-      </div>
-      {showModal && body.trim().length !== 0 && imageButtonClick && (
-        <Modal>
-          <UploadImage
-            setShowModal={setShowModal}
-            handleFiles={handleFiles}
-            imageUrls={imageUrls}
-            handleImageDelete={handleImageDelete}
-          />
-        </Modal>
-      )}
-      {showModal && imageButtonClick && body.trim().length === 0 && (
-        <Modal>
-          <ReviewErrorModal setImageButtonClick={setImageButtonClick} />
-        </Modal>
-      )}
       {location.pathname.includes("/edit") &&
         body.trim().length > 0 &&
         rating > 0 && (
