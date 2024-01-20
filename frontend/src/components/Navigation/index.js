@@ -42,7 +42,7 @@ function Navigation() {
           <h1 className="notHome">DineDiscovery</h1>
         )}
 
-        <i className="fa-brands fa-yelp" style={{ color: "black" }}></i>
+        <i className="fa-brands fa-yelp" style={{ color: "red" }}></i>
       </NavLink>
       <SearchBar />
       <CategorySearch />
@@ -75,9 +75,9 @@ function Navigation() {
             <NavLink className="signUp" to="/signup">
               Sign Up
             </NavLink>
-            <NavLink to="/">
+            {/* <NavLink to="/">
               <DemoLogin className={"demoLogin"} string="Demo Login" />
-            </NavLink>
+            </NavLink> */}
           </div>
         )}
 
