@@ -2,6 +2,7 @@ import "./mainSlider.css"
 // import CategorySearch from "../CategorySearch/CategorySearch";
 import Navigation from "../Navigation";
 import { useState,useEffect } from "react";
+
 const MainSlider=()=>{
   const [urlIndex, setUrlIndex] = useState(0);
   const imageUrls = [
