@@ -55,6 +55,7 @@ function ProfileButton({ user }) {
       </div>
       {showMenu && (
         <ul className="profile-dropdown">
+          
           <li className="logoutButton" onClick={logout}>
             <i className="fa-solid fa-right-from-bracket"></i>Log Out
           </li>
