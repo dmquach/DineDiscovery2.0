@@ -70,7 +70,7 @@ const LoginFormPage = () => {
         <div className="loginIntro">
           <h1>Log In</h1>
           <div>
-            <h4>New?</h4>
+            <h4>New to Dine Discover? &nbsp; </h4>
             <Link className="signupLink" to="/signup">
               Sign Up
             </Link>
@@ -97,12 +97,6 @@ const LoginFormPage = () => {
           {/* <span>Forgot password?</span> */}
           <button type="submit">Log In</button>
           <DemoLogin className="demo" string="Demo Login" />
-        </div>
-        <div className="signupSmall">
-          <p>New? </p>
-          <Link className="signupLink Small" to="/signup">
-            Sign Up
-          </Link>
         </div>
       </form>
     </div>
