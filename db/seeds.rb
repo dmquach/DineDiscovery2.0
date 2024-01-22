@@ -110,7 +110,7 @@ pizzaPizza = Business.create!(
   lng: 0,
 )
 #pizza2
-# championPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizza.jpg"), filename: "pizza1.jWipg")
+pizzaPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/360_F_27579652_tM7V4fZBBw8RLmZo0Bi8WhtO2EosTRFD.jpg"), filename: "pizza1.jWipg")
 
 puts "business..."
 
