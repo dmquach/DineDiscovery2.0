@@ -110,10 +110,8 @@ pizzaPizza = Business.create!(
   lng: 0,
 )
 #pizza2
-puts "here"
 # pizzaPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/360_F_27579652_tM7V4fZBBw8RLmZo0Bi8WhtO2EosTRFD.jpg"), filename: "pizza1.jWipg")
 
-puts "business..."
 
 pizzaHut = Business.create!(
   user_id: 2,
@@ -131,7 +129,6 @@ pizzaHut = Business.create!(
 # local_image_path = Rails.root.join('db', 'images', 'pizzahut.png')
 # pizzaHut.photo.attach(io: File.open(local_image_path, 'rb'), filename: 'pizzahut.png')
 # championPizza.photo.attach(io: File.open('../db/images/pizza.jpg'), filename: 'pizza.jpg')
-puts "here"
 # bravoPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizz3.jpg"), filename: "pizza-3.jpg")
 #pizza5
 
@@ -178,8 +175,12 @@ freshPizza = Business.create!(
   lat: 0,
   lng: 0,
 )
-# littleItalyPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizz4.jpg"), filename: "pizza-4.jpg")
+
+puts "here"
+freshPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/pizza.jpg"), filename: "pizza.jpg")
 #pizza6
+puts "business..."
+
 
 modPizza = Business.create!(
   user_id: 6,
