@@ -27,5 +27,4 @@ env.development.local
 
 /filter.txt
 /frontend/.env
-config/initializers/aws.rb
 !/public
