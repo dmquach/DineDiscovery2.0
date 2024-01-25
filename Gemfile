@@ -6,7 +6,6 @@ gem "jbuilder"
 gem "activestorage"
 gem "actiontext"
 gem "aws-sdk-s3"
-gem 'carrierwave'
 
 ruby "3.1.1"
 

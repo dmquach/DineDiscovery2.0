@@ -29,7 +29,8 @@ Rails.application.configure do
 
     config.cache_store = :null_store
   end
-  config.active_storage.service = :amazon_dev
+
+  config.active_storage.service = :local
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -54,4 +55,7 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  config.active_storage.service = :amazon_dev
+
 end

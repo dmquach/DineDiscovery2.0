@@ -23,7 +23,6 @@
 #  one_star     :float
 #
 class Business < ApplicationRecord
-  mount_uploader :image, ImageUploader
   validates :name, presence: true
   validates :lat, presence: true
   validates :lng, presence: true

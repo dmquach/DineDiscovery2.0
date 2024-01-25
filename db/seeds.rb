@@ -5,7 +5,6 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-require "aws-sdk-s3"
 require "open-uri"
 
 # ApplicationRecord.transaction do
@@ -177,7 +176,7 @@ freshPizza = Business.create!(
 )
 
 puts "here"
-freshPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/pizza.jpg"), filename: "pizza.jpg")
+freshPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/pizza.jpg"), filename: "pizza-4.jpg")
 #pizza6
 puts "business..."
 
