@@ -37,11 +37,11 @@ const CategorySearch =()=>{
               <Link to={`/search/pizza`}>
                 <h1>Pizza</h1>
               </Link>
-              <Link to={`/search/burger`}>
-                <h1>Burgers</h1>
-              </Link>
               <Link to={`/search/drinks`}>
                 <h1>Drinks</h1>
+              </Link>
+              <Link to={`/search/burger`}>
+                <h1>Burgers</h1>
               </Link>
             </div>
           )}

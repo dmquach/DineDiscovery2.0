@@ -235,7 +235,7 @@ yumCoffee = Business.create!(
   lat: 0,
   lng: 0,
 )
-# willCoffee.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/will.jpg"), filename: "coffee.jpg")
+yumCoffee.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink3.jpg"), filename: "drink3.jpeg")
 
 thinkCoffee = Business.create!(
   user_id: 6,
@@ -249,7 +249,7 @@ thinkCoffee = Business.create!(
   lat: 0,
   lng: 0,
 )
-# thinkCoffee.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee9.jpg"), filename: "coffee1.jpg")
+thinkCoffee.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink4.jpg"), filename: "drink4.jpg")
 
 starbucks = Business.create!(
   user_id: 7,
@@ -263,7 +263,7 @@ starbucks = Business.create!(
   lat: 0,
   lng: 0,
 )
-# starbucks.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee11.jpg"), filename: "coffee1.jpg")
+starbucks.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink6.jpg"), filename: "drink6.jpg")
 
 blankStreetCoffee = Business.create!(
   user_id: 8,
@@ -277,21 +277,7 @@ blankStreetCoffee = Business.create!(
   lat: 0,
   lng: 0,
 )
-# blankStreetCoffee.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee6.jpg"), filename: "coffee1.jpg")
-
-coffee = Business.create!(
-  user_id: 9,
-  name: "Coffee House",
-  city: "SF",
-  state: "CA",
-  zip_code: "95121",
-  phone_number: "1234567890",
-  price_range: 100,
-  category: "Drinks",
-  lat: 0,
-  lng: 0,
-)
-# baratie.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/barati_.jpg"), filename: "barati.jpg")
+blankStreetCoffee.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink5.jpg"), filename: "drink5.jpg")
 
 boba = Business.create!(
   user_id: 1,
@@ -319,7 +305,7 @@ coffeeee = Business.create!(
   lat: 0,
   lng: 0,
 )
-# minca.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen7.jpg"), filename: "ramen2.jpeg")
+thinkCoffee.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink7.jpg"), filename: "drink7.jpg")
 
 bobaHouse = Business.create!(
   user_id: 4,
@@ -348,21 +334,6 @@ burgerBurger = Business.create!(
   lat: 0,
   lng: 0,
 )
-# marufucuRamen.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen3.jpg"), filename: "ramen2.jpeg")
-
-iceCold = Business.create!(
-  user_id: 6,
-  name: "Ice Cream",
-  city: "SF",
-  state: "CA",
-  zip_code: "95121",
-  phone_number: "1234567890",
-  price_range: 20,
-  category: "Dessert",
-  lat: 0,
-  lng: 0,
-)
-# ramenMisoya.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen7.jpg"), filename: "ramen2.jpeg")
 
 bunsHouse = Business.create!(
   user_id: 7,
@@ -376,7 +347,6 @@ bunsHouse = Business.create!(
   lat: 0,
   lng: 0,
 )
-# ippudo.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen3.jpg"), filename: "ramen2.jpeg")
 
 burgerKing = Business.create!(
   user_id: 8,
@@ -390,6 +360,73 @@ burgerKing = Business.create!(
   lat: 0,
   lng: 0,
 )
+
+mcdonalds = Business.create!(
+  user_id: 8,
+  name: "McBurger",
+  city: "SF",
+  state: "CA",
+  zip_code: "95121",
+  phone_number: "1234567890",
+  price_range: 5,
+  category: "Burger",
+  lat: 0,
+  lng: 0,
+)
+
+wendys = Business.create!(
+  user_id: 8,
+  name: "Wendy's",
+  city: "SF",
+  state: "CA",
+  zip_code: "95121",
+  phone_number: "1234567890",
+  price_range: 20,
+  category: "Burger",
+  lat: 0,
+  lng: 0,
+)
+
+burgerplace = Business.create!(
+  user_id: 8,
+  name: "Burger Palace",
+  city: "SF",
+  state: "CA",
+  zip_code: "95121",
+  phone_number: "1234567890",
+  price_range: 20,
+  category: "Burger",
+  lat: 0,
+  lng: 0,
+)
+
+yummyburger = Business.create!(
+  user_id: 8,
+  name: "Yum Burgs",
+  city: "SF",
+  state: "CA",
+  zip_code: "95121",
+  phone_number: "1234567890",
+  price_range: 20,
+  category: "Burger",
+  lat: 0,
+  lng: 0,
+)
+
+iceCold = Business.create!(
+  user_id: 6,
+  name: "Ice Cream",
+  city: "SF",
+  state: "CA",
+  zip_code: "95121",
+  phone_number: "1234567890",
+  price_range: 20,
+  category: "Dessert",
+  lat: 0,
+  lng: 0,
+)
+
+
 # puts "reviews"
 
 # # oramen.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen2.jpg"), filename: "ramen2.jpeg")
