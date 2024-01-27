@@ -222,20 +222,6 @@ myPizza = Business.create!(
   lng: 0,
 )
 myPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/Filaga-Gallery-2500px-1.jpg"), filename: "p8.jpg")
-puts "drinks"
-yumCoffee = Business.create!(
-  user_id: 5,
-  name: "Yum Latte",
-  city: "SF",
-  state: "CA",
-  zip_code: "95121",
-  phone_number: "1234567890",
-  price_range: 100,
-  category: "Drinks",
-  lat: 0,
-  lng: 0,
-)
-yumCoffee.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink3.jpg"), filename: "drink3.jpeg")
 
 thinkCoffee = Business.create!(
   user_id: 6,
@@ -305,7 +291,7 @@ coffeeee = Business.create!(
   lat: 0,
   lng: 0,
 )
-thinkCoffee.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink7.webp"), filename: "drink7.webp")
+coffeeee.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink7.webp"), filename: "drink7.webp")
 
 bobaHouse = Business.create!(
   user_id: 4,
@@ -320,6 +306,34 @@ bobaHouse = Business.create!(
   lng: 0,
 )
 bobaHouse.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink2.webp"), filename: "drink2.jpeg")
+
+yumCoffee = Business.create!(
+  user_id: 5,
+  name: "Yum Latte",
+  city: "SF",
+  state: "CA",
+  zip_code: "95121",
+  phone_number: "1234567890",
+  price_range: 100,
+  category: "Drinks",
+  lat: 0,
+  lng: 0,
+)
+yumCoffee.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink3.jpg"), filename: "drink3.jpeg")
+
+yummyburger = Business.create!(
+  user_id: 8,
+  name: "Yum Burgs",
+  city: "SF",
+  state: "CA",
+  zip_code: "95121",
+  phone_number: "1234567890",
+  price_range: 20,
+  category: "Burger",
+  lat: 0,
+  lng: 0,
+)
+yummyburger.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/burger5.jpg"), filename: "burger5.jpg")
 
 burgerBurger = Business.create!(
   user_id: 5,
@@ -405,20 +419,6 @@ burgerplace = Business.create!(
 )
 burgerplace.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/burger4.webp"), filename: "burger4.webp")
 
-yummyburger = Business.create!(
-  user_id: 8,
-  name: "Yum Burgs",
-  city: "SF",
-  state: "CA",
-  zip_code: "95121",
-  phone_number: "1234567890",
-  price_range: 20,
-  category: "Burger",
-  lat: 0,
-  lng: 0,
-)
-yummyburger.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/burger5.jpg"), filename: "burger5.jpg")
-puts "dessert"
 iceCold = Business.create!(
   user_id: 6,
   name: "Ice Cream",
