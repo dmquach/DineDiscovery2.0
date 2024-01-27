@@ -441,7 +441,6 @@ iceCold.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.ama
 
 puts "reviews"
 
-# oramen.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen2.jpg"), filename: "ramen2.jpeg")
 wills_1 = Review.create!(
   rating: 5,
   business_id: 11,

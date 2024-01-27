@@ -6,6 +6,8 @@ import "./signup.css";
 import SignupHeader from "./SignupHeader";
 import { useRef } from "react";
 import { Modal } from "../../Context/Modal";
+import { NavLink } from "react-router-dom/cjs/react-router-dom";
+import DemoLogin from "../DemoLogin/DemoLogin";
 // import { useEffect } from "react";
 const SignupFormPage = () => {
   const myButton = useRef();
@@ -333,6 +335,9 @@ const [showModal, setShowModal] = useState(false);
               </select>
             </div>
             <button type="submit">Sign Up</button>
+            <NavLink to="/">
+              <DemoLogin className={"profile_image_button"} string="Demo Login"/>
+            </NavLink>
           </div>
         </form>
       </div>
