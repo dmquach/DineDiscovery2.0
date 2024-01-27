@@ -175,11 +175,8 @@ freshPizza = Business.create!(
   lng: 0,
 )
 
-puts "here"
 freshPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/pizza.jpg"), filename: "pizza-4.jpg")
 #pizza6
-puts "business..."
-
 
 modPizza = Business.create!(
   user_id: 6,
