@@ -30,6 +30,7 @@ demo = User.create!(
   zip_code: "12345",
   birthday: "1995-05-15",
 )
+demo.avatar.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/avatar.png"), filename: "avatar.png")
 
 mike = User.create!(
     email: 'mike123@gmail.com',
