@@ -334,6 +334,7 @@ burgerBurger = Business.create!(
   lat: 0,
   lng: 0,
 )
+burgerBurger.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/burger1.jpg"), filename: "burger1.jpg")
 
 bunsHouse = Business.create!(
   user_id: 7,
@@ -347,6 +348,7 @@ bunsHouse = Business.create!(
   lat: 0,
   lng: 0,
 )
+bunsHouse.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/burger2.jpg"), filename: "burger2.jpg")
 
 burgerKing = Business.create!(
   user_id: 8,
@@ -360,6 +362,7 @@ burgerKing = Business.create!(
   lat: 0,
   lng: 0,
 )
+burgerKing.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/burger3.jpg"), filename: "burger3.jpg")
 
 mcdonalds = Business.create!(
   user_id: 8,
@@ -373,6 +376,7 @@ mcdonalds = Business.create!(
   lat: 0,
   lng: 0,
 )
+mcdonalds.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/mcdonalds.png"), filename: "mcdonalds.png")
 
 wendys = Business.create!(
   user_id: 8,
@@ -386,6 +390,7 @@ wendys = Business.create!(
   lat: 0,
   lng: 0,
 )
+wendys.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/wendys.webp"), filename: "wendys.webp")
 
 burgerplace = Business.create!(
   user_id: 8,
@@ -399,6 +404,7 @@ burgerplace = Business.create!(
   lat: 0,
   lng: 0,
 )
+burgerplace.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/burger4.webp"), filename: "burger4.webp")
 
 yummyburger = Business.create!(
   user_id: 8,
@@ -412,6 +418,7 @@ yummyburger = Business.create!(
   lat: 0,
   lng: 0,
 )
+yummyburger.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/burger5.jpg"), filename: "burger5.jpg")
 
 iceCold = Business.create!(
   user_id: 6,
@@ -425,6 +432,7 @@ iceCold = Business.create!(
   lat: 0,
   lng: 0,
 )
+iceCold.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink2.webp"), filename: "drink2.jpeg")
 
 
 # puts "reviews"
