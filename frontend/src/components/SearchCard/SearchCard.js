@@ -32,12 +32,6 @@ const SearchCard = (biz) => {
         <li>
           <span>open</span> until 9 PM
         </li>
-        {biz.reviews && (
-          <li className="commentList">
-            <i className="fa-regular fa-comment"></i>
-            <span className="commentBody">{biz.reviews?.body}</span>
-          </li>
-        )}
       </ul>
     </Link>
   );
