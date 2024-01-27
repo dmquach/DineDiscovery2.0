@@ -221,8 +221,8 @@ myPizza = Business.create!(
   lat: 0,
   lng: 0,
 )
-simoPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/Filaga-Gallery-2500px-1.jpg"), filename: "p8.jpg")
-
+myPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/Filaga-Gallery-2500px-1.jpg"), filename: "p8.jpg")
+puts "drinks"
 yumCoffee = Business.create!(
   user_id: 5,
   name: "Yum Latte",
@@ -305,7 +305,7 @@ coffeeee = Business.create!(
   lat: 0,
   lng: 0,
 )
-thinkCoffee.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink7.jpg"), filename: "drink7.jpg")
+thinkCoffee.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink7.webp"), filename: "drink7.webp")
 
 bobaHouse = Business.create!(
   user_id: 4,
@@ -320,7 +320,6 @@ bobaHouse = Business.create!(
   lng: 0,
 )
 bobaHouse.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink2.webp"), filename: "drink2.jpeg")
-
 
 burgerBurger = Business.create!(
   user_id: 5,
@@ -419,7 +418,7 @@ yummyburger = Business.create!(
   lng: 0,
 )
 yummyburger.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/burger5.jpg"), filename: "burger5.jpg")
-
+puts "dessert"
 iceCold = Business.create!(
   user_id: 6,
   name: "Ice Cream",
@@ -432,7 +431,7 @@ iceCold = Business.create!(
   lat: 0,
   lng: 0,
 )
-iceCold.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink2.webp"), filename: "drink2.jpeg")
+iceCold.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/icecream.jpg"), filename: "icecream.jpg")
 
 
 # puts "reviews"
