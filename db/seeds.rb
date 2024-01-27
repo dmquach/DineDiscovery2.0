@@ -231,7 +231,7 @@ yumCoffee = Business.create!(
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 100,
-  category: "Coffee",
+  category: "Drinks",
   lat: 0,
   lng: 0,
 )
@@ -245,7 +245,7 @@ thinkCoffee = Business.create!(
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 20,
-  category: "Coffee",
+  category: "Drinks",
   lat: 0,
   lng: 0,
 )
@@ -287,7 +287,7 @@ coffee = Business.create!(
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 100,
-  category: "Coffee",
+  category: "Drinks",
   lat: 0,
   lng: 0,
 )
@@ -305,37 +305,7 @@ boba = Business.create!(
   lat: 0,
   lng: 0,
 )
-
-# ramenIchiraku.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/naruto.jpg"), filename: "ramen.jpeg")
-
-starbucks = Business.create!(
-  user_id: 2,
-  name: "Starbucks",
-  city: "SF",
-  state: "CA",
-  zip_code: "95121",
-  phone_number: "1234567890",
-  price_range: 20,
-  category: "Drinks",
-  lat: 0,
-  lng: 0,
-)
-
-# gorinRamen.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen2.jpg"), filename: "ramen.jpeg")
-
-raiser = Business.create!(
-  user_id: 3,
-  name: "raiser",
-  city: "SF",
-  state: "CA",
-  zip_code: "95121",
-  phone_number: "1234567890",
-  price_range: 20,
-  category: "Ramen",
-  lat: 0,
-  lng: 0,
-)
-# tabeTomo.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen3.jpg"), filename: "ramen2.jpeg")
+boba.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink1.jpg"), filename: "drink1.jpeg")
 
 coffeeee = Business.create!(
   user_id: 4,
@@ -350,6 +320,21 @@ coffeeee = Business.create!(
   lng: 0,
 )
 # minca.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen7.jpg"), filename: "ramen2.jpeg")
+
+bobaHouse = Business.create!(
+  user_id: 4,
+  name: "Boba House",
+  city: "SF",
+  state: "CA",
+  zip_code: "95121",
+  phone_number: "1234567890",
+  price_range: 20,
+  category: "Drinks",
+  lat: 0,
+  lng: 0,
+)
+bobaHouse.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/drink2.webp"), filename: "drink2.jpeg")
+
 
 burgerBurger = Business.create!(
   user_id: 5,
@@ -373,7 +358,7 @@ iceCold = Business.create!(
   zip_code: "95121",
   phone_number: "1234567890",
   price_range: 20,
-  category: "drinks",
+  category: "Dessert",
   lat: 0,
   lng: 0,
 )
