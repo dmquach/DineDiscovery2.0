@@ -39,6 +39,7 @@ mike = User.create!(
     zip_code: '95121',
     password: 'password',
 )
+mike.avatar.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/man.png"), filename: "man.png")
 
 paulo = User.create!(
   email: 'paulo123@example.com',
@@ -47,6 +48,7 @@ paulo = User.create!(
   zip_code: '12345',
   password: 'password'
 )
+paulo.avatar.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/man2.png"), filename: "man2.png")
 
 chris = User.create!(
   email: 'chris123@example.com',
@@ -63,6 +65,7 @@ abbey = User.create!(
   zip_code: '67890',
   password: 'password'
 )
+abbey.avatar.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/images-1.png"), filename: "images-1.png")
 
 darren = User.create!(
   email: 'darren123@example.com',
@@ -86,6 +89,7 @@ taylor = User.create!(
   zip_code: '13579',
   password: 'password'
 )
+taylor.avatar.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/woman.jpg"), filename: "woman.jpg")
 
 disnee = User.create!(
   email: 'disnee123@example.com',
@@ -94,6 +98,7 @@ disnee = User.create!(
   zip_code: '98765',
   password: 'password'
 )
+disnee.avatar.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/woman2.png"), filename: "woman2.png")
 
 puts "Creating businesses..."
 
