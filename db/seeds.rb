@@ -439,21 +439,20 @@ iceCold = Business.create!(
 )
 iceCold.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/icecream.jpg"), filename: "icecream.jpg")
 
+puts "reviews"
 
-# puts "reviews"
-
-# # oramen.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen2.jpg"), filename: "ramen2.jpeg")
-# wills_1 = Review.create!(
-#   rating: 5,
-#   business_id: 11,
-#   user_id: 1,
-#   body: "Pretty good.",
-#   images: [
-#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee9.jpg"), filename: "image1.jpg" },
-#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee2.jpg"), filename: "image2.jpg" },
-#     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee3.jpg"), filename: "image3.jpg" },
-#   ],
-# )
+# oramen.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/ramen2.jpg"), filename: "ramen2.jpeg")
+wills_1 = Review.create!(
+  rating: 5,
+  business_id: 11,
+  user_id: 1,
+  body: "Pretty good.",
+  images: [
+    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee9.jpg"), filename: "image1.jpg" },
+    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee2.jpg"), filename: "image2.jpg" },
+    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee3.jpg"), filename: "image3.jpg" },
+  ],
+)
 # puts "here"
 
 # Business.find(wlls_1.business_id).update_average_rating
