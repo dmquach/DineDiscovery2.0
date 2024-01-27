@@ -228,7 +228,7 @@ const [showModal, setShowModal] = useState(false);
               className="profile_image_button"
               onClick={() => myButton.current.click()}
             >
-              Add a Profile Picture
+              Add a Profile Picture (Optional)
             </div>
             <input
                 ref={myButton}
