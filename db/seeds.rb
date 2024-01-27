@@ -165,7 +165,7 @@ freshPizza = Business.create!(
   lat: 0,
   lng: 0,
 )
-freshPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/pizza.jpg"), filename: "pizza-4.jpg")
+freshPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/pizza.jpg"), filename: "p4.jpg")
 
 modPizza = Business.create!(
   user_id: 6,
@@ -179,21 +179,7 @@ modPizza = Business.create!(
   lat: 0,
   lng: 0,
 )
-# unregularPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizz5.jpg"), filename: "pizza-5.jpg")
-my = Business.create!(
-  user_id: 1,
-  name: "SF Street",
-  city: "SF",
-  state: "CA",
-  zip_code: "95121",
-  phone_number: "1234567890",
-  price_range: 10,
-  category: "Pizza",
-  lat: 0,
-  lng: 0,
-)
-helloP.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/p3.jpg"), filename: "p3.jpg")
-
+modPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/MOD_Pizza_logo.svg.png"), filename: "p5.jpg")
 
 italianPizza = Business.create!(
   user_id: 2,
@@ -221,7 +207,7 @@ dylanPizza = Business.create!(
   lat: 0,
   lng: 0,
 )
-# joesPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizza.jpg"), filename: "pizza-8.jpg")
+dylanPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/download-1.jpg"), filename: "p6.jpg")
 
 myPizza = Business.create!(
   user_id: 4,
@@ -234,9 +220,8 @@ myPizza = Business.create!(
   category: "Pizza",
   lat: 0,
   lng: 0,
-
 )
-# simoPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizza7.jpg"), filename: "simoPizza.jpg")
+simoPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/Filaga-Gallery-2500px-1.jpg"), filename: "p8.jpg")
 
 yumCoffee = Business.create!(
   user_id: 5,
