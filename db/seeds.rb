@@ -95,7 +95,7 @@ disnee = User.create!(
 )
 
 puts "Creating businesses..."
-#pizza1
+
 pizzaPizza = Business.create!(
   user_id: 1,
   name: "Pizza Pizza",
@@ -108,8 +108,7 @@ pizzaPizza = Business.create!(
   lat: 0,
   lng: 0,
 )
-#pizza2
-# pizzaPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/360_F_27579652_tM7V4fZBBw8RLmZo0Bi8WhtO2EosTRFD.jpg"), filename: "pizza1.jWipg")
+pizzaPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/p1.jpg"), filename: "p1.jpg")
 
 
 pizzaHut = Business.create!(
@@ -123,15 +122,9 @@ pizzaHut = Business.create!(
   category: "Pizza",
   lat: 0,
   lng: 0,
-  # photo: "foods/download-1.png",
 )
-# local_image_path = Rails.root.join('db', 'images', 'pizzahut.png')
-# pizzaHut.photo.attach(io: File.open(local_image_path, 'rb'), filename: 'pizzahut.png')
-# championPizza.photo.attach(io: File.open('../db/images/pizza.jpg'), filename: 'pizza.jpg')
-# bravoPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizz3.jpg"), filename: "pizza-3.jpg")
-#pizza5
+pizzaHut.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/Pizza-Hut.webp"), filename: "pizzahut.jpg")
 
-#pizza3
 unionSquarePizza = Business.create!(
   user_id: 3,
   name: "Tres Pizza",
@@ -144,9 +137,9 @@ unionSquarePizza = Business.create!(
   lat: 0,
   lng: 0,
 )
+unionSquarePizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/download.jpg"), filename: "pizzau.jpg")
 
-#pizza4
-helpMe = Business.create!(
+helloP = Business.create!(
   user_id: 4,
   name: "Hello Pizza",
   city: "SF",
@@ -158,9 +151,7 @@ helpMe = Business.create!(
   lat: 0,
   lng: 0,
 )
-
-# bravoPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizz3.jpg"), filename: "pizza-3.jpg")
-#pizza5
+helloP.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/p2.jpg"), filename: "p2.jpg")
 
 freshPizza = Business.create!(
   user_id: 5,
@@ -174,9 +165,7 @@ freshPizza = Business.create!(
   lat: 0,
   lng: 0,
 )
-
 freshPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/pizza.jpg"), filename: "pizza-4.jpg")
-#pizza6
 
 modPizza = Business.create!(
   user_id: 6,
@@ -191,7 +180,6 @@ modPizza = Business.create!(
   lng: 0,
 )
 # unregularPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizz5.jpg"), filename: "pizza-5.jpg")
-#pizza 7
 my = Business.create!(
   user_id: 1,
   name: "SF Street",
@@ -204,8 +192,8 @@ my = Business.create!(
   lat: 0,
   lng: 0,
 )
-# ribalta.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizza6.jpg"), filename: "pizza-6.jpg")
-#pizza 8
+helloP.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/p3.jpg"), filename: "p3.jpg")
+
 
 italianPizza = Business.create!(
   user_id: 2,
@@ -219,8 +207,7 @@ italianPizza = Business.create!(
   lat: 0,
   lng: 0,
 )
-
-# kidBrotherPizza.photo.attach(io: URI.open("https://zelp-seeds.s3.amazonaws.com/pizza7.jpg"), filename: "pizza-7.jpg")
+italianPizza.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/p2.jpg"), filename: "p2.jpg")
 
 dylanPizza = Business.create!(
   user_id: 3,
