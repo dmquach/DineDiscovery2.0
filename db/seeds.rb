@@ -441,22 +441,19 @@ iceCold.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.ama
 
 puts "reviews"
 
-wills_1 = Review.create!(
+r1 = Review.create!(
   rating: 5,
-  business_id: 11,
-  user_id: 1,
+  business_id: 1,
+  user_id: 2,
   body: "Pretty good.",
   images: [
-    # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee9.jpg"), filename: "image1.jpg" },
+    { io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai_188544-12347.avif"), filename: "image1.jpg" }
     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee2.jpg"), filename: "image2.jpg" },
     # { io: URI.open("https://zelp-seeds.s3.amazonaws.com/coffee3.jpg"), filename: "image3.jpg" },
   ],
 )
-# puts "here"
+Business.find(wills_1.business_id).update_average_rating
 
-# Business.find(wlls_1.business_id).update_average_rating
-
-# puts "here"
 
 # wills_2 = Review.create!(
 #   rating: 5,
