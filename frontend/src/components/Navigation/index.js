@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import ProfileButton from "./ProfileButton";
 import "./navigation.css";
-import DemoLogin from "../DemoLogin/DemoLogin";
+// import DemoLogin from "../DemoLogin/DemoLogin";
 import SearchBar from "../SearchBar/SearchBar";
 // import { Link } from "react-router-dom";
 import CategorySearch from "../CategorySearch/CategorySearch";

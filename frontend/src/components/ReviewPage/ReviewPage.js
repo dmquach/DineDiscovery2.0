@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState} from "react";
 import { Redirect } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { receiveReview } from "../../store/review";
@@ -15,22 +15,25 @@ import ImageDeletedModal from "./ImageDeletedModal";
 
 const ReviewPage = () => {
   const sessionUser = useSelector((state) => state.session.user);
-  const [newPicture, setNewPicture] = useState(null);
+  // const [newPicture, setNewPicture] = useState(null);
   const location = useLocation();
   //  const { myReview } = location.state;
 
   const dispatch = useDispatch();
-  const url = location.pathname;
+  // const url = location.pathname;
   const { review } = useParams();
 
   const arr = review.split("-");
-  const [hover, setHover] = useState(0);
-  const [BID, setBID] = useState(arr[1]);
+  // const [hover, setHover] = useState(0);
+  // const [BID, setBID] = useState(arr[1]);
+  const BID = arr[1]
   const [rating, setRating] = useState(arr[0]);
   const [body, setBody] = useState("");
-  const [userId, setUserId] = useState(sessionUser?.id);
+  // const [userId, setUserId] = useState(sessionUser?.id);
+  const userId = sessionUser?.id
   const [redirect, setRedirect] = useState(false);
-  const [bName, setBname] = useState(arr[2]);
+  // const [bName, setBname] = useState(arr[2]);
+  const bName = arr[2]
   const [imageFiles, setImageFiles] = useState([]);
   const [imageUrls, setImageUrls] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -39,7 +42,7 @@ const ReviewPage = () => {
   const [prevImageUrls, setPrevImageUrls] = useState([]);
   const [wasImage, setWasImage] = useState(false);
   const [myReview, setMyReview] = useState("");
-  const [alertVisible, setAlertVisible] = useState(false);
+  // const [alertVisible, setAlertVisible] = useState(false);
   const[deleteImage,setDeleteImage] = useState(false)
 const [currentIndex,setCurrentIndex] = useState("")
 const [deletedAlert,setDeletedAlert] = useState(false)
@@ -139,7 +142,7 @@ const [deletedAlert,setDeletedAlert] = useState(false)
 
   const handlePostWarning = () => {
     setShowAlert(true);
-    setAlertVisible(true);
+    // setAlertVisible(true);
   };
 
   const handleImageDeleteWarning=(e,i)=>{
@@ -204,7 +207,6 @@ const [deletedAlert,setDeletedAlert] = useState(false)
                 key={i + 88}
                 className={i <= rating ? "on" : "off"}
                 onMouseEnter={() => setRating(i)}
-                onMouseLeave={() => setHover(rating)}
               >
                 <i className="fa-solid fa-star"></i>
               </span>
@@ -300,7 +302,7 @@ const [deletedAlert,setDeletedAlert] = useState(false)
         ) : (
           <div className="imageUplodeDiv" onClick={handleModalImage}>
             <i className="fa-solid fa-camera-retro"></i>
-            <h1>Upload Image Here</h1>
+            <h1>Click Here to upload images!</h1>
           </div>
         )}
       </div>

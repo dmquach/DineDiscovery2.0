@@ -439,15 +439,15 @@ iceCold = Business.create!(
 )
 iceCold.photo.attach(io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/icecream.jpg"), filename: "icecream.jpg")
 
-puts "reviews"
+puts "Creating reviews"
 
 r1 = Review.create!(
   rating: 5,
   business_id: 1,
   user_id: 2,
-  body: "Very cheesy, I love it!.",
+  body: "Very cheesy, I love it!",
   images: [
-    { io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai_188544-12347.avif"), filename: "image1.jpg" }
+    { io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai_188544-12347.avif"), filename: "pp.jpg" }
   ],
 )
 Business.find(r1.business_id).update_average_rating
@@ -497,7 +497,7 @@ Business.find(r5.business_id).update_average_rating
 r6 = Review.create!(
   rating: 5,
   business_id: 13,
-  user_id: 6,
+  user_id: 7,
   body: "Tasty!!",
   images: [
   ],
@@ -507,7 +507,7 @@ Business.find(r6.business_id).update_average_rating
 r7 = Review.create!(
   rating: 5,
   business_id: 18,
-  user_id: 6,
+  user_id: 8,
   body: "A great variety of foods!",
   images: [
     { io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/burg2.jpg"), filename: "burg2.jpg" }
@@ -518,7 +518,7 @@ Business.find(r7.business_id).update_average_rating
 r8 = Review.create!(
   rating: 1,
   business_id: 3,
-  user_id: 6,
+  user_id: 9,
   body: "Why are they cooking from a cart???",
   images: [
     { io: URI.open("https://dine-discovery-seeds.s3.us-west-1.amazonaws.com/badp.jpg"), filename: "badp.jpg" }
@@ -527,12 +527,3 @@ r8 = Review.create!(
 )
 Business.find(r8.business_id).update_average_rating
 
-r9 = Review.create!(
-  rating: 5,
-  business_id: 1,
-  user_id: 6,
-  body: "Was better than I thought it would be!",
-  images: [
-  ],
-)
-Business.find(r9.business_id).update_average_rating
