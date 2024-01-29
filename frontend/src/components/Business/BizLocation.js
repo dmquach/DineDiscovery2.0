@@ -1,24 +1,9 @@
 // import { useLoadScript } from "@react-google-maps/api";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import "./business.css";
-import { useSelector, useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
-import { fetchBusiness } from "../../store/business";
-import Loading from "../Utils/Loading";
 // import BizGMap from "../Map/Marker";
-const BizLocation = () => {
-  const dispatch = useDispatch();
-  const { id } = useParams();
-  const business = useSelector((state) => state.business[id]);
-  const [loading, setLoading] = useState(true);
+const BizLocation = ({ business }) => {
 
-  useEffect(() => {
-    dispatch(fetchBusiness(id)).then(()=>setLoading(false));
-  }, [id, dispatch]);
-
-  if (loading) {
-    return <Loading/>;
-  }
 
   return (
     <>
