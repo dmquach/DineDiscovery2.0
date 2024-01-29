@@ -48,7 +48,7 @@ const UploadImage = ({
               <h1>Attach Photos</h1>
             </div>
           ) : (
-            <h1>looks good!</h1>
+            <h1>How does it look?</h1>
           )}
 
           <div className="uploadImage_ButtonsDiv">

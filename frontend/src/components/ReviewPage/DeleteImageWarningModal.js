@@ -33,10 +33,9 @@ const DeleteImageWarningModal = ({
               <h1>Warning</h1>
             </div>
             <p>
-              Please note that <span>deleting the image</span> is a{" "}
-              <span>permanent action</span> and <span>cannot be undone.</span>
+              <span>Deleting the image cannot be undone.</span>
             </p>
-            <h2>Are you sure you want to proceed with the deletion?</h2>
+            <h2>Are you sure you?</h2>
           </div>
           <div className="areYouSure_Button">
             <div

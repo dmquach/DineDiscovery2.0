@@ -18,7 +18,7 @@ const ImageDeletedModal = ({ setDeletedAlert }) => {
       <div className="deletedSuccess">
         <i className="fa-solid fa-check"></i>
         <h1>Success!</h1>
-        <p>Your image was successfully deleted</p>
+        <p>Your image was deleted!</p>
       </div>
     </div>
   );

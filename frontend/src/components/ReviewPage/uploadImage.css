@@ -27,12 +27,12 @@ box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.36);
 
 .modal_button:hover {
   /* background-color: rgb(4, 191, 85); */
-  background-color: #0073bb;
+  background-color: gray;
   transition: all, 0.3s;
   color:white
 }
 .modal_button.submit:hover{
-    background-color: #05b13b;
+    background-color: gray;
 }
 .modalImageDiv {
   display: flex;
