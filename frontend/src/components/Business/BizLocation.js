@@ -20,10 +20,8 @@ const BizLocation = ({ business }) => {
       </div>
       <div className="locationWrapper">
         <div className="bizLocation">
-          {/* <BizGMap business={business} class_name={"locationMap"} /> */}
           <div className="locationAddress">
-            <h2>{business.city}{" "}{business.state},{business.zipCode}</h2>
-            <h3>{business.name}</h3>
+            <h2>{"SF"}{" "}{"CA"},{" 95121"}</h2>
           </div>
         </div>
 
