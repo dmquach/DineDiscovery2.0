@@ -15,13 +15,14 @@ import ImageDeletedModal from "./ImageDeletedModal";
 
 const ReviewPage = () => {
   const sessionUser = useSelector((state) => state.session.user);
-  // const [newPicture, setNewPicture] = useState(null);
+
+  const [newPicture, setNewPicture] = useState(null);
   const location = useLocation();
-  //  const { myReview } = location.state;
+   const { myReview } = location.state;
 
   const dispatch = useDispatch();
   // const url = location.pathname;
-  const { review } = useParams();
+  // const { review } = useParams();
 
   const arr = review.split("-");
   // const [hover, setHover] = useState(0);
