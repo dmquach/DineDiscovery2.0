@@ -300,7 +300,7 @@ const [deletedAlert,setDeletedAlert] = useState(false)
         ) : (
           <div className="imageUplodeDiv" onClick={handleModalImage}>
             <i className="fa-solid fa-camera-retro"></i>
-            <h1>Click Here to upload images!</h1>
+            <h1>Upload Image Here</h1>
           </div>
         )}
       </div>

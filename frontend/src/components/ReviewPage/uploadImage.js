@@ -43,19 +43,9 @@ const UploadImage = ({
         </div>
 
         <div className="imageInfoDiv">
-          {imageUrls.length === 0 && (
-            <img src="https://s3-media0.fl.yelpcdn.com/assets/public/photo_review_325x200_v2.yji-9de7a3277cea44fd0377.svg" alt=""/>
-          )}
           {imageUrls.length === 0 ? (
             <div className="imageHowto">
               <h1>Attach Photos</h1>
-              <p>
-                <span>To select multiple images</span>, either hold{" "}
-                <span>"Ctrl"</span>
-                (Windows) or <span>"Command"</span> (Mac) and{" "}
-                <span>click on each image</span>, or <span>click and drag</span>{" "}
-                to create a box around them
-              </p>
             </div>
           ) : (
             <h1>looks good!</h1>
