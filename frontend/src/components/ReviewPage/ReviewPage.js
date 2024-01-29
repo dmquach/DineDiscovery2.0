@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Redirect } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { receiveReview } from "../../store/review";
@@ -15,7 +15,6 @@ import ImageDeletedModal from "./ImageDeletedModal";
 
 const ReviewPage = () => {
   const sessionUser = useSelector((state) => state.session.user);
-
   const [newPicture, setNewPicture] = useState(null);
   const location = useLocation();
   //  const { myReview } = location.state;
@@ -25,16 +24,13 @@ const ReviewPage = () => {
   const { review } = useParams();
 
   const arr = review.split("-");
-  // const [hover, setHover] = useState(0);
-  // const [BID, setBID] = useState(arr[1]);
-  const BID = useState(arr[1])
+  const [hover, setHover] = useState(0);
+  const [BID, setBID] = useState(arr[1]);
   const [rating, setRating] = useState(arr[0]);
   const [body, setBody] = useState("");
-  // const [userId, setUserId] = useState(sessionUser?.id);
-  const userId = useState(sessionUser?.id);
+  const [userId, setUserId] = useState(sessionUser?.id);
   const [redirect, setRedirect] = useState(false);
-  // const [bName, setBname] = useState(arr[2]);
-  const bName = useState(arr[2])
+  const [bName, setBname] = useState(arr[2]);
   const [imageFiles, setImageFiles] = useState([]);
   const [imageUrls, setImageUrls] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -43,7 +39,7 @@ const ReviewPage = () => {
   const [prevImageUrls, setPrevImageUrls] = useState([]);
   const [wasImage, setWasImage] = useState(false);
   const [myReview, setMyReview] = useState("");
-  // const [alertVisible, setAlertVisible] = useState(false);
+  const [alertVisible, setAlertVisible] = useState(false);
   const[deleteImage,setDeleteImage] = useState(false)
 const [currentIndex,setCurrentIndex] = useState("")
 const [deletedAlert,setDeletedAlert] = useState(false)
@@ -143,7 +139,7 @@ const [deletedAlert,setDeletedAlert] = useState(false)
 
   const handlePostWarning = () => {
     setShowAlert(true);
-    // setAlertVisible(true);
+    setAlertVisible(true);
   };
 
   const handleImageDeleteWarning=(e,i)=>{
@@ -208,7 +204,7 @@ const [deletedAlert,setDeletedAlert] = useState(false)
                 key={i + 88}
                 className={i <= rating ? "on" : "off"}
                 onMouseEnter={() => setRating(i)}
-                // onMouseLeave={() => setHover(rating)}
+                onMouseLeave={() => setHover(rating)}
               >
                 <i className="fa-solid fa-star"></i>
               </span>
@@ -276,6 +272,52 @@ const [deletedAlert,setDeletedAlert] = useState(false)
             )}
           </div>
         </>
+      )}
+
+      <div className="imageUploadDiv">
+        <h3>New Photos</h3>
+      </div>
+      <div className="reviewFormWrapper reviewPicPreview">
+        {!showModal && imageUrls.length !== 0 ? (
+          <>
+            {imageUrls.length &&
+              imageUrls.map((url, i) => (
+                <div
+                  className="image__"
+                  key={url + i}
+                  style={{
+                    backgroundImage: `url(${url})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
+                  <div onClick={() => handleImageDelete(i)}>
+                    <i className="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              ))}
+          </>
+        ) : (
+          <div className="imageUplodeDiv" onClick={handleModalImage}>
+            <i className="fa-solid fa-camera-retro"></i>
+            <h1>Click Here to upload images!</h1>
+          </div>
+        )}
+      </div>
+      {showModal && body.trim().length !== 0 && imageButtonClick && (
+        <Modal>
+          <UploadImage
+            setShowModal={setShowModal}
+            handleFiles={handleFiles}
+            imageUrls={imageUrls}
+            handleImageDelete={handleImageDelete}
+          />
+        </Modal>
+      )}
+      {showModal && imageButtonClick && body.trim().length === 0 && (
+        <Modal>
+          <ReviewErrorModal setImageButtonClick={setImageButtonClick} />
+        </Modal>
       )}
       {location.pathname.includes("/edit") &&
         body.trim().length > 0 &&
