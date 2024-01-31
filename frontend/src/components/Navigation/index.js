@@ -56,7 +56,7 @@ function Navigation() {
         </a>
         <a
           id="fabLink2"
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/dylanmquach/"
           // target="_blank"
         >
           <i className="fa-brands fa-linkedin"></i>
