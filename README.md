@@ -1,23 +1,16 @@
-# WELCOME TO DineDiscover
+# Welcome to DineDiscover
 
-Check out the [Live Site](https://DineDiscover-jz8y.onrender.com/)!.
+Live Link: https://dinediscover.onrender.com/
 
-## introduction
+### What is DineDiscover?
 
-DineDiscover is a web application that allows users to browse restaurants, leave reviews, and view ratings. The idea behind DineDiscover was to create a platform that makes it easy for people to find and discover new restaurants. As a foodie and avid restaurant-goer, I was interested in building a website that helps people find the perfect place to eat.
-The technologies used in this project include:
+DineDiscover is an online platform designed for users to explore restaurants, share reviews, and access ratings effortlessly. The inspiration behind DineDiscover stemmed from a passion for food and a love for dining out. The goal is to provide a user-friendly website that simplifies the process of discovering exciting new restaurants. As a dedicated food enthusiast, I aimed to create a space where people can easily find their ideal dining spot and share their culinary experiences.
 
-- Languages: JavaScript, HTML, Ruby, and CSS
-- Frontend: React, Redux
-- Backend: Ruby on Rails
-- Database: PostgreSQL
-- Hosting: Render
-- Asset Storage: Amazon S3
+> ![How It looks](/app/assets/images/dine.gif)
 
-# MVPs
+### Components
 
 # Reviews
-
 DineDiscover users can easily share their dining experiences by writing reviews with ratings and multiple pictures. The latest reviews will appear on the front page, and if a user has already written a review for a restaurant, it will show up at the top of the review section for convenience.
 
 ```js
