@@ -35,22 +35,6 @@ const handleFiles = ({ currentTarget }) => {
 };
 ```
 
-a DineDiscover user can easily update their reviews and ratings by clicking updating button to update their review
-
-> Updating a review
-> ![update review](/app/assets/images/update.gif)
-
-a DineDiscover user easily can see their review it will be always on the top of review section
-
-> Writing a review (with images)
-> ![updateReview a review_1](/app/assets/images/starReview_2.gif)
-
-> Writing a review (without an image)
-> ![making a review_1](/app/assets/images/starReview_1.gif)
-
-> Deleting a review
-> ![delete a review_1](/app/assets/images/deleteReview.gif)
-
 # Rating
 
 DineDiscover user leaves a rating for a restaurant, DineDiscover automatically updates the restaurant's overall rating to reflect the new feedback. This ensures that users have access to the most accurate and up-to-date restaurant ratings possible.
@@ -97,71 +81,22 @@ DineDiscover user leaves a rating for a restaurant, DineDiscover automatically u
   end
 ```
 
-> Dynamic Rating Feature
-> ![delete a review_1](/app/assets/images/rating.gif)
+### Tech Stack
+- JavaScript, HTML, Ruby, and CSS coding languages
+- [React](https://react.dev/), [Redux](https://react-redux.js.org/) for frontend
+- [Ruby on Rails](https://rubyonrails.org/) for backend
+- [PostgreSQL](https://www.postgresql.org/) as database
+- [AWS S3](https://aws.amazon.com/) to store and render every photo in this app
+- [Render](https://render.com/) to host this app online
+- [FontAwesome](https://fontawesome.com/) for icons used on Roominate
 
-# Search
+### Highlights!
 
-If you're a DineDiscover user, you can use the search, google map will render places with markers to find great restaurants. user can filter your search by category, making it easy to find.
+## Searching
+The search function can be done through a search bar or through a dropdown menu of premade options
 
-> Search Bar feature
-> ![search bar feature](/app/assets/images/searchType.gif)
+> ![Searching](/app/assets/images/search.gif)
 
-> Search by category feature
-> ![delete a review_1](/app/assets/images/searchcate.gif)
-
-```js
-//search logic in frontend
-const SearchBar = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-  useEffect(() => {}, [searchTerm]);
-  return (
-    <>
-      <div className="searchbarWrapper">
-        <input
-          type="text"
-          value={searchTerm}
-          placeholder="taco,cheap dinner,Max's"
-          onChange={(e) => {
-            setSearchTerm(e.target.value);
-          }}
-        />
-        <Link className="searchLink" to={`/search/${searchTerm}`}>
-          <button>
-            <i className="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </Link>
-      </div>
-    </>
-  );
-};
-```
-
-```ruby
-#search logic in backend
-  def search
-    query = params[:query].downcase
-    category = params[:category]&.downcase
-    @businesses = Business.includes(:reviews).where("LOWER(category) LIKE ?", "%#{query}%")
-    render :search
-  end
-```
-
-# Review Awaits
-
-DineDiscover has a special feature called "Your Next Review Awaits" that helps users discover new dining experiences. When users log in to their accounts, they'll see a list of recommended restaurants that they haven't reviewed yet. This makes it easy to try new places and share their experiences with others.
-
-```ruby
-  def unreviewed
-    @businesses = Business.where.not(id: current_user.reviews.pluck(:business_id)).order("RANDOM()").limit(6)
-    render :unreviewed
-  end
-```
-
-> Review Awaits Features
-> ![review awaits features](/app/assets/images/await.gif)
-
-# Thanks
-
-DineDiscover was created within a 14day time frame thank you for your time and consideration!
-# DineDiscovery2.0
+### Future Implementations
+- Adding Price Ranges to restaurants as another way to filter
+- Adding GoogleMaps API as a way to find the location of the restaurant
